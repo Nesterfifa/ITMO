@@ -1,0 +1,85 @@
+.main {
+  width: 50%;
+  margin: auto;
+  border: 1px solid lightgray;
+  font-family: Arial, sans-serif;
+}
+
+.main table {
+  border-spacing: 1.5rem;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.main table tr td img {
+  width: 100%;
+}
+
+.main table tr td {
+  transition: box-shadow .3s;
+  border: 1px solid lightgray;
+}
+
+.main table tr td:hover {
+  box-shadow: 0 0 5px 0 gray;
+}
+
+.cat-header p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 2rem !important;
+}
+
+.block-table .cat-header {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.block-table .info {
+  padding: 5% 10% 15% 10%;
+  color: gray;
+}
+
+.block-table .info > p {
+  line-height: 1rem;
+  font-size: 0.9rem;
+  margin: 2px;
+}
+
+.button-block {
+  display: block;
+  padding: 1rem 0 0 1.5rem;
+  max-height: 3rem;
+}
+
+.listCheckbox, .list-label, :checked ~ .block-label, :checked ~ .block-table, .list-table {
+  display: none;
+}
+
+:checked ~ .list-label {
+  display: inline;
+}
+
+:checked ~ .list-table {
+  display: table;
+}
+
+.list-table .cat-header {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.list-table .info {
+  padding: 5%;
+  color: gray;
+}
+
+.list-table .info > p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+  margin: 2px;
+}
+

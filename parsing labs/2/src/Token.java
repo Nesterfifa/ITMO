@@ -1,0 +1,3 @@
+public enum Token {
+    FUN, NAME, LPAREN, RPAREN, LTRIANG, RTRIANG, COLON, COMMA, END
+}
