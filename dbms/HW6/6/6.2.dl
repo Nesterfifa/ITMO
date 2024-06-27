@@ -1,0 +1,10 @@
+QS(StudentId, CourseId) :-
+    Marks(StudentId, CourseId, _).
+P(GroupId, CourseId) :-
+    Courses(CourseId, _),
+    Students(StudentId, _, GroupId),
+    not QS(StudentId, CourseId).
+Result(GroupName, CourseName) :-
+    Courses(CourseId, CourseName),
+    Groups(GroupId, GroupName),
+    not P(GroupId, CourseId).

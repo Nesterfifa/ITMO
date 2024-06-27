@@ -1,0 +1,10 @@
+MarksByCourseId(StudentId, CourseId) :-
+    Marks(StudentId, CourseId, Mark),
+    CourseId = :CourseId.
+    
+StudentsGroups(StudentId, StudentName, GroupName) :-
+    Students(StudentId, StudentName, GroupId),
+    Groups(GroupId, GroupName),
+    Plan(GroupId, CourseId, LecturerId),
+    not MarksByCourseId(StudentId, :CourseId),
+    CourseId = :CourseId.

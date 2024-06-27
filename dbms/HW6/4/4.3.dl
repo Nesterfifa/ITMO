@@ -1,0 +1,12 @@
+StudentsPlanCourses(StudentId, CourseId, StudentName, CourseName) :-
+    Students(StudentId, StudentName, GroupId),
+    Plan(GroupId, CourseId, LecturerId),
+    Courses(CourseId, CourseName).
+
+Passed(StudentId, CourseId) :-
+    Marks(StudentId, CourseId, Mark),
+    Mark > 2.
+
+NotPassed(StudentName, CourseName) :-
+    StudentsPlanCourses(StudentId, CourseId, StudentName, CourseName),
+    not Passed(StudentId, CourseId).

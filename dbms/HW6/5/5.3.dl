@@ -1,0 +1,16 @@
+Q(StudentId, CourseId) :-
+    Marks(StudentId, CourseId, _).
+
+S(CourseId) :-
+    Plan(_, CourseId, LecturerId),
+    Lecturers(LecturerId, LecturerName),
+    LecturerName = :LecturerName.
+    
+P(StudentId) :-
+    Students(StudentId, _, _),
+    S(CourseId),
+    not Q(StudentId, CourseId).
+   
+Result(StudentId) :-
+    Students(StudentId, _, _),
+    not P(StudentId).

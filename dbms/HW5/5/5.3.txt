@@ -1,0 +1,1 @@
+pi{StudentName, CourseName}((Students nj Plan nj Courses) except pi{StudentId, StudentName, GroupId, CourseId, LecturerId, CourseName}(sigma{Mark > 3}(Students nj Plan nj Courses nj Marks)))

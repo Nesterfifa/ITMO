@@ -1,0 +1,1 @@
+pi{StudentId, CourseId}(Marks) gd pi{StudentId, GroupId}(Students)

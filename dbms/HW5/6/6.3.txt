@@ -1,0 +1,1 @@
+pi{StudentId, CourseId}(Marks) sd pi{CourseId}(sigma{LecturerName = :LecturerName}(Plan nj Lecturers))

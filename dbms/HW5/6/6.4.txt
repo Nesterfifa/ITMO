@@ -1,0 +1,11 @@
+pi{StudentId}(
+    sigma{MarksStudentId = StudentId}(
+        rename{MarksStudentId = StudentId}(Marks)
+        gd
+        (
+            sigma{LecturerName = :LecturerName}(
+                Students nj Plan nj Lecturers
+            )
+        )
+    )
+)
